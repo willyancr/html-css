@@ -8,50 +8,84 @@
 </head>
 <body>
     <h1>Testes de Formularios</h1>
-    <form action="cadastro.php" autocomplete="on" method="get"></form>
-    <fieldset> 
-        <!-- Agrupamento de Formularios -->
-        <legend>Dados Pessoais</legend>
-        <!-- Legenda de Formularios -->
+    <form action="cadastro.php" autocomplete="on" method="post">
+        <fieldset> 
+            <!-- Agrupamento de Formularios -->
+            <legend>Dados Pessoais</legend>
+            <!-- Legenda de Formularios -->
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" placeholder="Nome completo" required>
+            </p>
+            <p>
+                <label for="imes">Periodo Letivo</label>
+                <input type="date" name="mes" id="imes" required >
+            </p>
+            <p>
+                <label for="imedia">Média: </label>
+                <input type="number" name="media" id="imedia" required step="0.1" placeholder="digite sua média">
+            </p>
+            <p>
+                <label for="imail">Email: </label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telfone: </label>
+                <input type="tel" name="tel" id="itel" required autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+            </p>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Escolha o esporte favorito</legend>
+            <input type="checkbox" name="fut" id="ifut"> <label for="ifut">Futebol</label><br> <!-- Label para clicar no nome e marcar a opção-->
+            <input type="checkbox" name="vol" id="ivol"> Volei<br>
+            <input type="checkbox" name="bas" id="ibas"> Basquete<br>
+            <input type="checkbox" name="tenis" id="iten"> Tenis
+            
+        </fieldset>
+        <fieldset>
+            <legend>Escolha o Sexo</legend>
+            <input type="radio" name="sexo" id="imasc" checked> <label for="imasc">Masculino</label><br> <!-- checked pra deixar uma das opções marcada-->
+            <input type="radio" name="sexo" id="ifem"><label for="ifem"> Feminino</label>
+            <!-- em radio deixar no mesmo "name"-->
+            
+        </fieldset>
+        <fieldset>
+            <legend>Selecione arquivo</legend>
+            <label for="ifile">Selecione uma foto: </label>
+            <input type="file" name="file" id="ifile">
+            
+        </fieldset>
+        <fieldset>
+            <legend>Selecione Estado</legend>
+            <label for="iest">Qual o Estado que nasceu: </label>
+            <select name="est" id="iest">
+                <option value="">--- Escolha ---</option>
+                <optgroup label="Região Norte">
+                    <option value="TO">Tocantins</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="PA">Pará</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="BA">Bahia</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="CE">Ceará</option>
+                </optgroup>
+
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Selecione Profissão</legend>
+            <label for="iprof">Sua profissão: </label>
+            <input type="text" name="prof" id="iprof">
+            
+            
+        </fieldset>
         <p>
-            <label for="inome">Nome</label>
-            <input type="text" name="nome" id="inome" placeholder="Nome completo" required>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
         </p>
-        <p>
-            <label for="imes">Periodo Letivo</label>
-            <input type="date" name="mes" id="imes" required >
-        </p>
-        <p>
-            <label for="imedia">Média: </label>
-            <input type="number" name="media" id="imedia" required step="0.1" placeholder="digite sua média">
-        </p>
-        <p>
-            <label for="imail">Email: </label>
-            <input type="email" name="email" id="iemail" required autocomplete="email">
-        </p>
-        <p>
-            <label for="itel">Telfone: </label>
-            <input type="tel" name="tel" id="itel" required autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
-        </p>
-        
-    </fieldset>
-    <fieldset>
-        <legend>Escolha o esporte favorito</legend>
-        <input type="checkbox" name="fut" id="ifut"> <label for="ifut">Futebol</label><br> <!-- Label para clicar no nome e marcar a opção-->
-        <input type="checkbox" name="vol" id="ivol"> Volei<br>
-        <input type="checkbox" name="bas" id="ibas"> Basquete<br>
-        <input type="checkbox" name="tenis" id="iten"> Tenis
-        
-    </fieldset>
-    <fieldset>
-        <legend>Escolha o Sexo</legend>
-        <input type="radio" name="sexo" id="imasc" checked> <label for="imasc">Masculino</label><br>
-        <input type="radio" name="sexo" id="ifem"><label for="ifem"> Feminino</label>
-        
-    </fieldset>
-    <p>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
-    </p>
+
+    </form>    
 </body>
 </html>
