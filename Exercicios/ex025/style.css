@@ -2,13 +2,25 @@
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
 }
-h1{
+h1 {
     background-color: #8E3F2E;
     color: #F0F3EE;
     text-align:center;
     padding: 10px;
+    width: 100vw;
+}
+#icon{
+    background-color: #8E3F2E;
+    color: #F0F3EE;
+    text-align:center;
+    padding: 10px;
+    width: 100vw;
+    cursor: pointer;
+}
+
+#menu{
+    display: none;
 }
 #menu a{
     background-color: #EEA686;
@@ -20,6 +32,7 @@ h1{
     font-weight: 700;
     padding: 10px;
     border-top: 2px solid;
+    width: 100vw;
 }
 #menu a:hover{
     background-color: #8E3F2E;
@@ -27,11 +40,13 @@ h1{
 }
 #corpo{
     background-color: #e0dddd;
-    margin: 20px 400px;
+    width: 80vw;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 20px;
-    border-radius: 30px;
+    border-radius: 10px;
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.356);
-    
 }
 #corpo h2{
     text-align: center;
