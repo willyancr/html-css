@@ -18,6 +18,9 @@ h1 {
     width: 100vw;
     cursor: pointer;
 }
+#icon:hover{
+    background-color: #b16a5b;
+}
 
 #menu{
     display: none;
