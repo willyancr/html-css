@@ -67,23 +67,31 @@ menu a:hover{
     }
     menu{
         display: block;
+        text-align: center;
         
+    }
+    ul{
+        background-color: #8E3F2E;
+        padding: 0;
+        margin: 0;
     }
     
     li{
         display: inline-block;
+        margin-bottom: 10px;
         margin-right: 5px;
-        background-color: #8E3F2E;
-        
+     
     }
     li a{
-        display: block;
         text-decoration: none;
-        color: aliceblue;
         padding: 5px;
         text-align: center;
         border-radius: 5px;
-        transition-duration: 0.5s;
+        transition-duration: 0.1s;
+       
+    }
+    #corpo{
+        width: 768px;
     }
         
 }
